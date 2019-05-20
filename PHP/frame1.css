@@ -1,0 +1,107 @@
+   .menu {
+      float:left;
+      width:30%;
+      height:100%;
+	  background-color:#001e35;
+	  font-family:Bell MT;
+    }
+    .mainContent {
+      float:left;
+      width:69%;
+      height:100%;
+	  background-color:grey;
+    }
+	.name{
+		font-family:Bell MT;
+		color:#00bceb;	
+		text-align:center;
+	}
+	div.about{
+		text-align:center;
+		color:#001e35;
+		font-size:50px;
+		border-radius:20px;
+		font-family:script;
+		text-align:left;
+		margin:24px;
+	}
+	div.abouthover:hover{
+		text-shadow:0px 0px 5px #00bceb;
+		
+	}
+	div.textglow:hover{
+		transform: scale(1.1);
+		text-shadow:0px 0px 10px #00bcef;
+		animation-name:example;
+		animation-duration:3s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		
+	}
+	.list{
+		font-family:courier new;
+		size:3;
+		color:#35469e;
+	}
+	div.avatar{
+		background-image: url("jirayaicon.jpg");
+		border-radius:50%;
+		border:3px solid grey;
+		margin-left:auto;
+		margin-right:auto;
+		width:128px;
+		height:128px;
+		margin-top:50px;
+		margin-bottom:16px;
+	}
+	div.intro{
+		border-bottom-color:#001e35;
+		margin:24px;
+		font-family:viner hand itc;
+		font-size:18px;
+		padding:25px;
+		width:auto;
+		height:auto;
+		color:#001e35;
+		border-radius:10px;
+		background-image:radial-gradient(grey,dark grey);
+		display:none;
+	}
+
+	div.introani:hover+div.intro{
+		display:block;
+		position:relative;
+		animation-name:topdown;
+		box-shadow: 3px 3px 5px lightgrey;
+		animation-duration:2s;
+		animation-iteration-count:1;
+		animation-timing-function:ease-in;
+	}
+	
+	.back{
+		background-color:#252525;
+		color:#001e35;
+		text-shadow: 0 0 3px grey;
+		font-family:castellar;
+	}
+	.result{
+		color:#00bceb;
+		font-family:courier new;
+		size:4;
+	}
+	
+	
+	
+	@keyframes example{
+		0% { color:red; }
+		25% { color:yellow;}
+		50% {color: green;}
+		75% { color: blue;}
+		100%{color:grey;}
+	}
+	
+	@keyframes topdown{
+		0%{ right:850px;}
+		from{ right:850px;}
+		to { right:0px;}
+	}
